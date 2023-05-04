@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backtile"
+    android:orientation="vertical"
+    tools:context=".OnlineBlitzGame">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ListView
+        android:id="@+id/personal_chat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        app:layout_constraintBottom_toTopOf="@+id/personal_text_lay"
+        app:layout_constraintEnd_toStartOf="@+id/vertical80"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/vertical5"
+        app:layout_constraintTop_toTopOf="@+id/horizontal10">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/send_butt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/send_message_butt_style"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal40"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/vertical95"
+        app:layout_constraintStart_toStartOf="@+id/vertical80"
+        app:layout_constraintTop_toTopOf="@+id/horizontal30"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/personal_text_lay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:fadeScrollbars="true"
+        android:overScrollMode="always"
+        android:scrollbars="vertical"
+        android:textColorHint="@color/midnightBlue"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        app:hintTextAppearance="@style/MyHintText"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal40"
+        app:layout_constraintEnd_toStartOf="@+id/vertical80"
+        app:layout_constraintStart_toStartOf="@+id/vertical5"
+        app:layout_constraintTop_toTopOf="@+id/horizontal30"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/personal_text_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoSizeTextType="uniform"
+            android:focusable="true"
+            android:gravity="bottom"
+            android:hint="Введите сообщение ..."
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="@color/midnightBlue"
+            android:theme="@style/MyEditText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/map_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal95"
+        app:layout_constraintEnd_toStartOf="@+id/vertical95"
+        app:layout_constraintStart_toStartOf="@+id/vertical5"
+        app:layout_constraintTop_toTopOf="@+id/horizontal50">
+
+        <space.yakimov.firstapp.OnlineMapView
+            android:id="@+id/online_map"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ostalos_slov"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:text="лесоруб, (20)"
+        android:textColor="@color/midnightBlue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontal40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/my_move_back_view_left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:background="@color/belizeHole"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vertical5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontal10" />
+
+    <ImageView
+        android:id="@+id/my_move_back_view_right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:background="@color/belizeHole"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vertical95"
+        app:layout_constraintTop_toTopOf="@+id/horizontal10" />
+
+    <ImageView
+        android:id="@+id/my_move_back_view_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:background="@color/belizeHole"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vertical95"
+        app:layout_constraintStart_toStartOf="@+id/vertical5"
+        app:layout_constraintTop_toTopOf="@+id/horizontal95" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_online"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:progressDrawable="@drawable/probar"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider_progress_bar"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/silver"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_text_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:text="Player"
+        android:textColor="@color/clouds"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal10"
+        app:layout_constraintEnd_toStartOf="@+id/vertical50"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/opp_text_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:text="oppon"
+        android:textColor="@color/clouds"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vertical50"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/spinner_gen"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal80"
+        app:layout_constraintEnd_toStartOf="@+id/vertical80"
+        app:layout_constraintStart_toStartOf="@+id/vertical20"
+        app:layout_constraintTop_toTopOf="@+id/horizontal40"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_gen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:text="Генерируем карту"
+        android:textColor="@color/midnightBlue"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal95"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontal80"
+        tools:visibility="gone" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <TextView
+        android:id="@+id/opp_result_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:textColor="@color/midnightBlue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal60"
+        app:layout_constraintEnd_toStartOf="@+id/vertical80"
+        app:layout_constraintStart_toStartOf="@+id/vertical50"
+        app:layout_constraintTop_toTopOf="@+id/horizontal55" />
+
+    <TextView
+        android:id="@+id/opp_result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:textColor="@color/midnightBlue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal65"
+        app:layout_constraintEnd_toStartOf="@+id/vertical80"
+        app:layout_constraintStart_toStartOf="@+id/vertical50"
+        app:layout_constraintTop_toTopOf="@+id/horizontal60" />
+
+    <Button
+        android:id="@+id/accept_repeat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/repeat_button_style"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal75"
+        app:layout_constraintDimensionRatio="1101:353"
+        app:layout_constraintEnd_toStartOf="@+id/vertical80"
+        app:layout_constraintStart_toStartOf="@+id/vertical20"
+        app:layout_constraintTop_toTopOf="@+id/horizontal65"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/leave_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/leave_button_style"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal90"
+        app:layout_constraintDimensionRatio="1101:353"
+        app:layout_constraintEnd_toStartOf="@+id/vertical80"
+        app:layout_constraintStart_toStartOf="@+id/vertical20"
+        app:layout_constraintTop_toTopOf="@+id/horizontal80" />
+
+    <TextView
+        android:id="@+id/user_result_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:textColor="@color/midnightBlue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal60"
+        app:layout_constraintEnd_toStartOf="@+id/vertical50"
+        app:layout_constraintStart_toStartOf="@+id/vertical20"
+        app:layout_constraintTop_toTopOf="@+id/horizontal55" />
+
+    <TextView
+        android:id="@+id/scoring"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Подсчитываем очки"
+        android:textColor="@color/midnightBlue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal55"
+        app:layout_constraintEnd_toStartOf="@+id/vertical80"
+        app:layout_constraintStart_toStartOf="@+id/vertical20"
+        app:layout_constraintTop_toTopOf="@+id/horizontal40" />
+
+    <TextView
+        android:id="@+id/user_result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:textColor="@color/midnightBlue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal65"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_gen"
+        app:layout_constraintStart_toStartOf="@+id/vertical20"
+        app:layout_constraintTop_toTopOf="@+id/horizontal60" />
+
+    <ImageView
+        android:id="@+id/black_veil_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:src="@color/midnightBlue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/window_leave"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@color/clouds"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal95"
+        app:layout_constraintEnd_toStartOf="@+id/vertical90"
+        app:layout_constraintStart_toStartOf="@id/vertical10"
+        app:layout_constraintTop_toTopOf="@+id/horizontal30" />
+
+    <TextView
+        android:id="@+id/you_kicked"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:text="Матч закончится через:"
+        android:textColor="@color/midnightBlue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal50"
+        app:layout_constraintEnd_toStartOf="@+id/vertical90"
+        app:layout_constraintStart_toStartOf="@+id/vertical10"
+        app:layout_constraintTop_toTopOf="@+id/horizontal40" />
+
+
+    <TextView
+        android:id="@+id/text_timer_"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:textColor="@color/midnightBlue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal95"
+        app:layout_constraintEnd_toStartOf="@+id/vertical90"
+        app:layout_constraintStart_toStartOf="@+id/vertical10"
+        app:layout_constraintTop_toTopOf="@+id/horizontal50" />
+
+    <TextView
+        android:id="@+id/opp_leav_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:text="Соперник вышел"
+        android:textColor="@color/midnightBlue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal40"
+        app:layout_constraintEnd_toStartOf="@+id/vertical90"
+        app:layout_constraintStart_toStartOf="@+id/vertical10"
+        app:layout_constraintTop_toTopOf="@+id/horizontal30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ToggleButton
+        android:id="@+id/sound_toggle_bliz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/sound_toggle"
+        android:checked="true"
+        android:textOff=" "
+        android:textOn=" "
+        app:layout_constraintBottom_toTopOf="@+id/send_butt"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/vertical95"
+        app:layout_constraintStart_toEndOf="@+id/personal_chat"
+        app:layout_constraintTop_toTopOf="@+id/horizontal10"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

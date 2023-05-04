@@ -1,0 +1,72 @@
+{
+  "0": {
+    "name": "мышка",
+    "ImageName": "mouse",
+    "exp": 3
+  },
+  "1":
+    { "name": "кошка",
+      "ImageName": "cat",
+      "exp": 15
+    },
+  "2":
+    { "name": "белка",
+      "ImageName": "squirrel",
+      "exp": 35
+    },
+  "3":
+    { "name": "ворон",
+      "ImageName": "raven",
+      "exp": 75
+    },
+  "4":
+    { "name": "осьминог",
+      "ImageName": "octopus",
+      "exp": 125
+    },
+  "5":
+    { "name": "дельфин",
+      "ImageName": "dolphin",
+      "exp": 180
+    },
+  "6":
+    { "name": "слон",
+      "ImageName": "elephant",
+      "exp": 255
+    },
+  "7":
+    { "name": "шимпанзе",
+      "ImageName": "shimpanzee",
+      "exp": 350
+    },
+  "8":
+    { "name": "человек",
+      "ImageName": "human",
+      "exp": 450
+    },
+  "9":
+    { "name": "андроид",
+      "ImageName": "android",
+      "exp": 550
+    },
+  "10":
+    { "name": "сфинкс",
+      "ImageName": "sphinx",
+      "exp": 650
+    },
+  "11":
+    { "name": "дракон",
+      "ImageName": "dragon",
+      "exp": 750
+    },
+  "12":
+    { "name": "пришелец",
+      "ImageName": "alienr",
+      "exp": 850
+    },
+  "13":
+    { "name": "творец",
+      "ImageName": "creator",
+      "exp": 95000
+    }
+}
